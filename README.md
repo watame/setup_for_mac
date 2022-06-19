@@ -10,8 +10,13 @@ Mac設定用Ansibleレポジトリ
     - Terminalを起動し、下記のコマンドでインストール
     - ```brew install ansible```
 
-# +α スクリプトが利用できるかの構文チェック
+# 2. 設定したツールのインストール
+```zsh
+ansible-playbook setup.yml -i inventory
 ```
+
+# +α スクリプトが利用できるかの構文チェック
+```zsh
 ansible-playbook --syntax-check setup.yml -i inventory
 ```
 

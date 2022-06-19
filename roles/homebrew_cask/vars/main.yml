@@ -1,0 +1,15 @@
+# roles/homebrew_cask/vars/main.yml
+# 変数（インストールしたいツール）の定義
+
+# インストールしたいパッケージを列挙する
+packages:
+  # https://formulae.brew.sh/cask/iterm2#default
+  - { name: iterm2, state: present }
+  # https://formulae.brew.sh/cask/visual-studio-code#default
+  - { name: visual-studio-code, state: present }
+  # https://formulae.brew.sh/cask/slack#default
+  - { name: slack, state: present }
+  # https://formulae.brew.sh/cask/fig#default
+  - { name: fig, state: present }
+  # https://formulae.brew.sh/cask/docker#default
+  - { name: docker, state: present}
