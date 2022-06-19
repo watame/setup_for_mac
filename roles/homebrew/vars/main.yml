@@ -1,0 +1,18 @@
+# roles/homebrew/vars/main.yml
+# 変数（インストールしたいツール）の定義
+
+# GUIのインストールのために必要なサードパーティーレポジトリを追加する
+# https://qiita.com/sammrai/items/85ed5e914d424fbf9fd6
+taps:
+  - homebrew/cask
+  - homebrew/cask-versions
+  - homebrew/cask-fonts
+
+# インストールしたいパッケージを列挙する
+packages:
+  # https://formulae.brew.sh/formula/git#default
+  - { name: git, state: present }
+  # https://github.com/peco/peco
+  - { name: peco, state: present }
+  # https://formulae.brew.sh/formula/tree#default
+  - { name: tree, state: present }

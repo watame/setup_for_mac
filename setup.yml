@@ -1,0 +1,14 @@
+# setup.yml
+# エントリーポイントファイル
+# -> ここでrolesディレクトリに格納している各種定義ファイルを呼び出す
+- name: setup for mac
+  # inventoryに記載したhosts定義を参照する
+  hosts: localhost
+  connection: local
+  # sudoの実行有無（基本はnoにする）
+  become: no
+  # 対象サーバーの情報収集（特に情報収集する必要ないのでno）
+  gather_facts: no
+  roles:
+    - homebrew
+    - homebrew_cask

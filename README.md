@@ -8,7 +8,12 @@ Mac設定用Ansibleレポジトリ
     - https://brew.sh/index_ja
 3. Ansibleのインストール
     - Terminalを起動し、下記のコマンドでインストール
-    - `brew install ansible`
+    - ```brew install ansible```
+
+# +α スクリプトが利用できるかの構文チェック
+```
+ansible-playbook --syntax-check setup.yml -i inventory
+```
 
 # 参考サイト
 - https://rightcode.co.jp/blog/information-technology/ansible-mac-environment-setup
