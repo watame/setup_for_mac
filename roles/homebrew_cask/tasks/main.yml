@@ -2,6 +2,7 @@
 # タスク定義
 - block:
   - name: homebrew cask install
+    # 環境変数としてアプリケーションダウンロード先ディレクトリを設定
     environment:
       HOMEBREW_CASK_OPTS: --appdir=/Applications
     homebrew_cask:
