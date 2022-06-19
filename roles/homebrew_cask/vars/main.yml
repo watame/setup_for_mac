@@ -11,3 +11,5 @@ packages:
   - { name: slack, state: present }
   # https://formulae.brew.sh/cask/fig#default
   - { name: fig, state: present }
+  # https://formulae.brew.sh/cask/docker#default
+  - { name: docker, state: present}
