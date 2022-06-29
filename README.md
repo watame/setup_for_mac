@@ -24,4 +24,5 @@ ansible-playbook --syntax-check setup.yml -i inventory
 ```
 
 # 参考サイト
-- https://rightcode.co.jp/blog/information-technology/ansible-mac-environment-setup
+- [AnsibleでMacの環境構築をしてみた](https://rightcode.co.jp/blog/information-technology/ansible-mac-environment-setup)
+- [Ansibleでタグをつかって特定の処理のみ実行する](https://www.kabegiwablog.com/entry/2018/02/23/090000)
