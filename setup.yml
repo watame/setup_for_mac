@@ -12,3 +12,4 @@
   roles:
     - homebrew
     - homebrew_cask
+    - preference

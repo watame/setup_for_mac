@@ -1,0 +1,10 @@
+# roles/preference/vars/main.yml
+# 変数（インストールしたいツール）の定義
+
+# 実行したいしたいコマンドを列挙する
+commands:
+  # 隠しファイルを常に表示させる
+  # https://qiita.com/y_otake/items/cc9e2461c62eb6f9c53a
+  - { command: defaults write com.apple.finder AppleShowAllFiles TRUE }
+  # && で繋げると `Unexpected argument &&; leaving defaults unchanged.` で死ぬので分離して呼ぶ
+  - { command: killall Finder }
