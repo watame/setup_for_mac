@@ -23,6 +23,15 @@ ansible-playbook setup.yml -i inventory
 ansible-playbook --syntax-check setup.yml -i inventory
 ```
 
+# +α 特定のタグが付与されたスクリプトだけ実行する
+下記のようにタグを指定し、特定のタグに紐づく処理を呼び出すことも可能
+```zsh
+ansible-playbook setup.yml -i inventory --tags tag_name
+```
+
+- 例：`preference`タグの設定スクリプトだけを実施する
+    - `ansible-playbook setup.yml -i inventory --tags preference`
+
 # 参考サイト
 - [AnsibleでMacの環境構築をしてみた](https://rightcode.co.jp/blog/information-technology/ansible-mac-environment-setup)
 - [Ansibleでタグをつかって特定の処理のみ実行する](https://www.kabegiwablog.com/entry/2018/02/23/090000)
