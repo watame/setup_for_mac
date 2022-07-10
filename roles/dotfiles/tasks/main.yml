@@ -1,8 +1,26 @@
 # roles/dotfiles/tasks/main.yml
 # タスク定義
 - block:
+  - name: create git clone dir
+    command:
+      # mkdir -p で存在しない時だけディレクトリを作成する
+      cmd: mkdir -p {{ directory.clone_path }}
   - name: git colone dotfiles
+    command:
+      cmd: echo 'git clone!'
+  - name: remove README file
+    command:
+      cmd: echo 'remove README'
+      #cmd: rm {{ directory.clone_path }}/dotfiles/README.md
   - name: copy dotfiles to homedir
+    command:
+      cmd: echo 'copy dotfiles to homedir'
+      # dotfilesディレクトリからHomeディレクトリへドット
+      #cmd: cp {{ directory.clone_path }}/dotfiles/ {{ directory.dest_path }}
+  - name: remove git clone dir
+    command: 
+      cmd: echo 'remove dir'
+      #cmd: rm -r {{ directory.clone_path }}
 
   # CLIのコマンドだけインストールしたいときもあると思うのでTagを追加する
   # https://docs.ansible.com/ansible/2.9_ja/user_guide/playbooks_tags.html
