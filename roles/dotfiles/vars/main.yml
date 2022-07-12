@@ -6,5 +6,9 @@ repository: https://github.com/watame/dotfiles
 
 # コピー元と先のレポジトリを定義する
 directory:
-  clone_path: $HOME/workspace/tmp
+  clone_path: $HOME/workspace/tmp/dotfiles
   dest_path: $HOME
+
+# コピーするdotfileを定義する
+dotfiles:
+  { .vscode }
