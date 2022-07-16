@@ -18,6 +18,9 @@ ansible-playbook setup.yml -i inventory
 # 3. Terminalを再起動する
 ツールインストール直後はbrewのパス定義が読み込まれないので、ターミナルを再起動する必要がある
 
+# 4. 再ログイン
+Macの設定を適用させる場合は、再ログインが必要！
+
 # +α スクリプトが利用できるかの構文チェック
 ```zsh
 ansible-playbook --syntax-check setup.yml -i inventory
