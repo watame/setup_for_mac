@@ -8,3 +8,6 @@ commands:
   - { command: defaults write com.apple.finder AppleShowAllFiles TRUE }
   # && で繋げると `Unexpected argument &&; leaving defaults unchanged.` で死ぬので分離して呼ぶ
   - { command: killall Finder }
+  # キーボード長押し時のアクセント表示を削除
+  # https://ryo-blog.lsv.jp/archives/20210422/108/
+  - { command: defaults write -g ApplePressAndHoldEnabled -bool false }
