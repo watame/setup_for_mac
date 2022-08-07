@@ -16,3 +16,5 @@ packages:
   - { name: peco, state: present }
   # https://formulae.brew.sh/formula/tree#default
   - { name: tree, state: present }
+  # https://formulae.brew.sh/formula/anyenv#default
+  - { name: anyenv, state: present }
