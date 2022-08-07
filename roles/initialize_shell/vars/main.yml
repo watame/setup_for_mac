@@ -1,0 +1,15 @@
+# roles/initialize_shell/vars/main.yml
+# 変数（インストールしたいツール）の定義
+
+# dotfilesのレポジトリを定義
+repository: https://github.com/watame/dotfiles
+
+# コピー元と先のレポジトリを定義する
+directory:
+  clone_path: $HOME/workspace/tmp/dotfiles
+  dest_path: $HOME
+
+# コピーするdotfileを定義する
+dotfiles:
+  - { .vscode }
+  - { .zshrc }
