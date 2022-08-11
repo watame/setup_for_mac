@@ -11,4 +11,5 @@ directory:
 
 # コピーするdotfileを定義する
 dotfiles:
-  { .vscode }
+  - .vscode
+  - .zshrc
