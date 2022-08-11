@@ -2,11 +2,9 @@
 Mac設定用Ansibleレポジトリ
 
 # 1. Ansibleを利用するための前設定
-1. XCodeのインストール
-    - https://apps.apple.com/jp/app/xcode
-2. HomeBrewのインストール
+1. HomeBrewのインストール
     - https://brew.sh/index_ja
-3. Ansibleのインストール
+2. Ansibleのインストール
     - Terminalを起動し、下記のコマンドでインストール
     - ```brew install ansible```
 
@@ -48,3 +46,4 @@ ansible-playbook setup.yml -i inventory --tags tag_name1,tag_name2
 - [AnsibleでMacの環境構築をしてみた](https://rightcode.co.jp/blog/information-technology/ansible-mac-environment-setup)
 - [Ansibleでタグをつかって特定の処理のみ実行する](https://www.kabegiwablog.com/entry/2018/02/23/090000)
 - [ansible-playbook実行時に複数tagを指定する](https://qiita.com/tommarute/items/5cb93abdc96fa228bc13)
+- [Macの環境構築をAnsibleで自動化してみた 2021年版](https://tech.prog-8.com/entry/2021/12/19/setup-mac-ansible)
