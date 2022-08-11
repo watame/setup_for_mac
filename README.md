@@ -35,6 +35,16 @@ ansible-playbook setup.yml -i inventory --tags tag_name
 - 例：`preference`タグの設定スクリプトだけを実施する
     - `ansible-playbook setup.yml -i inventory --tags preference`
 
+複数タグを呼び出す場合は以下
+```zsh
+ansible-playbook setup.yml -i inventory --tags tag_name1,tag_name2
+```
+
+- 例：`dotfiles`->`initialize_shell`タグの順番で設定スクリプトを実施する
+    - `ansible-playbook setup.yml -i inventory --tags dotfiles,initialize_shell`
+
+
 # 参考サイト
 - [AnsibleでMacの環境構築をしてみた](https://rightcode.co.jp/blog/information-technology/ansible-mac-environment-setup)
 - [Ansibleでタグをつかって特定の処理のみ実行する](https://www.kabegiwablog.com/entry/2018/02/23/090000)
+- [ansible-playbook実行時に複数tagを指定する](https://qiita.com/tommarute/items/5cb93abdc96fa228bc13)

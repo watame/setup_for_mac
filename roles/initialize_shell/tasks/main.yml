@@ -5,12 +5,15 @@
     # shellを起動したいため、shellモジュールを用いて実施
     # https://kakts-tec.hatenablog.com/entry/2017/04/24/004904
     shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  # zsh拡張を追加
+  # oh my zshをインストールすると、元々の.zshrcが退避されるため、退避した設定ファイルを基に戻す
+  - name: restore .zshrc
+    shell: rm ~/.zshrc && mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
+  # oh my zsh拡張の追加
   - name: add zsh-autosuggestions extension
     shell: git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   - name: add zsh-syntax-highlighting extension
     shell: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-  # anyenv用を利用するためのモジュールを追加
+  # anyenvの初期化
   - name: add anyenv configuration
     shell: anyenv install --force-init
 
