@@ -13,3 +13,9 @@ packages:
   - { name: fig, state: present }
   # https://formulae.brew.sh/cask/docker#default
   - { name: docker, state: present}
+  # https://formulae.brew.sh/cask/figma#default
+  - { name: figma, state: present}
+  # https://formulae.brew.sh/cask/drawio#default
+  - { name: drawio, state: present}
+  # https://formulae.brew.sh/cask/google-chrome#default
+  - { name: google-chrome, state: present}
