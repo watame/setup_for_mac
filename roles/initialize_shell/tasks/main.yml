@@ -7,15 +7,18 @@
     shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   # oh my zshをインストールすると、元々の.zshrcが退避されるため、退避した設定ファイルを基に戻す
   - name: restore .zshrc
+    # & を利用するため shell でコマンドを実行
     shell: rm ~/.zshrc && mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
   # oh my zsh拡張の追加
   - name: add zsh-autosuggestions extension
+    # shell変数を利用するため shell でコマンドを実行
     shell: git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   - name: add zsh-syntax-highlighting extension
+    # shell変数を利用するため shell でコマンドを実行
     shell: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
   # anyenvの初期化
   - name: initialize anyenv
-    shell: anyenv install --force-init
+    command: anyenv install --force-init
   # anyenvで各envを導入する
   - name: install env
     command: anyenv install {{ item }}
