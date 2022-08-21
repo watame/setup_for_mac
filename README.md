@@ -19,6 +19,10 @@ ansible-playbook setup.yml -i inventory
 # 4. 再ログイン
 Macの設定を適用させる場合は、再ログインが必要！
 
+# ※ 実行に失敗した場合は。。。
+`brew cask` でインストールするGUIツールは既に導入されている場合があり `homebrew_cask` 以降に進めない場合がある。
+その際は下記に示しているタグ指定のインストールを別途実施すれば、問題なく導入できる。
+
 # +α スクリプトが利用できるかの構文チェック
 ```zsh
 ansible-playbook --syntax-check setup.yml -i inventory
