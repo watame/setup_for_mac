@@ -1,5 +1,65 @@
-# setup_for_mac
-Mac設定用Ansibleレポジトリ
+# About
+開発やMacの初期設定に必要なツールをAnsible経由で一気に追加するためのレポジトリ。
+導入するツールは以下。
+
+## CLI (homebrew)
+- Terminal関連
+    - tree
+        - ディレクトリ構造をTerminalで良い感じに表示してくれる
+        - http://mama.indstate.edu/users/ice/tree/
+    - peco
+        - 取り込んだ入力を検索できる（sedコマンドの強化版）
+        - https://github.com/peco/peco
+- 開発環境整備
+    - git
+        - バージョン管理ツール
+        - https://git-scm.com/downloads/guis/
+    - anyenv
+        - 各プログラミング言語で独立してバージョン管理ができる
+        - https://github.com/anyenv/anyenv
+
+## GUI (homebrew cask)
+- Terminal関連
+    - iTerm2
+        - MacのTerminalを使いやすくしたTerminal
+        - https://iterm2.com/
+    - Fig
+        - Terminalのありとあらゆるものを補完してくれるツール
+        - https://fig.io/
+- 開発環境整備
+    - Visual Studio Code
+        - 拡張に優れたエディター
+        - https://code.visualstudio.com/
+    - Docker
+        - 開発環境・アプリケーション環境をコンテナ形式で提供可能にするツール
+        - https://www.docker.com/
+    - Google Chrome
+        - GoogleのWebブラウザ
+        - https://www.google.com/intl/ja_jp/chrome/
+    - Figma
+        - 画面ワイヤーフレーム作成や、ブレストなどに利用するツール
+        - https://www.figma.com/ja/
+    - draw.io
+        - ER図や構成図を手軽に作成できるツール
+        - https://www.diagrams.net/
+- その他便利ツール
+    - Slack
+        - リアルタイムチャットツール
+        - https://slack.com/intl/ja-jp/
+    - Rectangle
+        - Macのウィンドウを良い感じで配置できるツール
+        - https://rectangleapp.com/
+    - Skitch
+        - キャプチャに書き込みができるツール
+        - https://evernote.com/intl/jp/products/skitch
+    - Clipy
+        - クリップボードの履歴を残し、コピーした情報を再利用できるツール
+        - https://clipy-app.com/
+
+## Mac本体の設定
+- 隠しファイルを常に表示させる
+- キーボード長押し時のアクセント表示を削除して、連続入力を可能にする
+
 
 # 1. Ansibleを利用するための前設定
 1. HomeBrewのインストール
