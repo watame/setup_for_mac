@@ -10,11 +10,14 @@ taps:
 
 # インストールしたいパッケージを列挙する
 packages:
-  # https://formulae.brew.sh/formula/git#default
-  - { name: git, state: present }
-  # https://github.com/peco/peco
-  - { name: peco, state: present }
+  # --- Terminal ---
   # https://formulae.brew.sh/formula/tree#default
   - { name: tree, state: present }
+  # https://github.com/peco/peco
+  - { name: peco, state: present }
+
+  # --- Development ---
+  # https://formulae.brew.sh/formula/git#default
+  - { name: git, state: present }
   # https://formulae.brew.sh/formula/anyenv#default
   - { name: anyenv, state: present }
