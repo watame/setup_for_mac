@@ -3,22 +3,27 @@
 
 # インストールしたいパッケージを列挙する
 packages:
+  # --- Terminal ---
   # https://formulae.brew.sh/cask/iterm2#default
   - { name: iterm2, state: present }
-  # https://formulae.brew.sh/cask/visual-studio-code#default
-  - { name: visual-studio-code, state: present }
-  # https://formulae.brew.sh/cask/slack#default
-  - { name: slack, state: present }
   # https://formulae.brew.sh/cask/fig#default
   - { name: fig, state: present }
+
+  # --- Development ---
+  # https://formulae.brew.sh/cask/visual-studio-code#default
+  - { name: visual-studio-code, state: present }
   # https://formulae.brew.sh/cask/docker#default
   - { name: docker, state: present}
+  # https://formulae.brew.sh/cask/google-chrome#default
+  - { name: google-chrome, state: present}
   # https://formulae.brew.sh/cask/figma#default
   - { name: figma, state: present}
   # https://formulae.brew.sh/cask/drawio#default
   - { name: drawio, state: present}
-  # https://formulae.brew.sh/cask/google-chrome#default
-  - { name: google-chrome, state: present}
+
+  # --- Utility ---
+  # https://formulae.brew.sh/cask/slack#default
+  - { name: slack, state: present }
   # https://formulae.brew.sh/cask/rectangle#default
   - { name: rectangle, state: present}
   # https://formulae.brew.sh/cask/clipy#default
