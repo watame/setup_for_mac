@@ -1,7 +1,7 @@
 # About
 開発やMacの初期設定に必要なツールをAnsible経由で一気に追加するためのレポジトリ。
-導入するツールは以下。
 
+# 導入するツール・設定
 ## CLI (homebrew)
 - Terminal関連
     - tree
