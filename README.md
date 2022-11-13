@@ -43,6 +43,9 @@
     - draw.io
         - ER図や構成図を手軽に作成できるツール
         - https://www.diagrams.net/
+    - Postman
+        - 手軽にPostなどのHTMLメソッドを発行できるツール
+        - https://www.postman.com/
 - その他便利ツール
     - Slack
         - リアルタイムチャットツール

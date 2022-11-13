@@ -20,6 +20,8 @@ packages:
   - { name: figma, state: present}
   # https://formulae.brew.sh/cask/drawio#default
   - { name: drawio, state: present}
+  # https://formulae.brew.sh/cask/postman#default
+  - { name: postman, state: present}
 
   # --- Utility ---
   # https://formulae.brew.sh/cask/slack#default
