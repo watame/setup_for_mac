@@ -24,9 +24,6 @@
     - iTerm2
         - MacのTerminalを使いやすくしたTerminal
         - https://iterm2.com/
-    - Fig
-        - Terminalのありとあらゆるものを補完してくれるツール
-        - https://fig.io/
 - 開発環境整備
     - Visual Studio Code
         - 拡張に優れたエディター

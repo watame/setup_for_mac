@@ -6,8 +6,6 @@ packages:
   # --- Terminal ---
   # https://formulae.brew.sh/cask/iterm2#default
   - { name: iterm2, state: present }
-  # https://formulae.brew.sh/cask/fig#default
-  - { name: fig, state: present }
 
   # --- Development ---
   # https://formulae.brew.sh/cask/visual-studio-code#default
